@@ -25,7 +25,7 @@ Mi objetivo es contar con un espacio claro, moderno y accesible que refleje mi t
 
 
 Puedes ver el portafolio en vivo aquí:
-👉
+👉 https://my-portafolio-self.vercel.app/
 
 
 📬 Contacto
