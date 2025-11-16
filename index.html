@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Canvas para el efecto de fondo -->
+    <canvas id="canvas" class="snow"></canvas>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="content-header">
+                <h1><span>Angel</span> Iglesias Salvador</h1>
+                <nav>
+                    <button class="icon-menu" id="menu-toggle" aria-expanded="false" aria-controls="nav-list">
+                        &#9776;
+                    </button>
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#experience">Experiencia</a></li>
+                        <li><a href="#projects">Projectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                    <button class="close-menu" id="close-menu" aria-label="Cerrar menú">
+                        &#10005;
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hola, mi nombre es</h2>
+            <h3>Angel Iglesias Salvador.</h3>
+            <h4>Ingeniero de Software con AI</h4>
+            <p>
+                Soy un ingeniero de software especializado en crear experiencias digitales excepcionales. 
+                Actualmente, me enfoco en desarrollar aplicaciones web accesibles y centradas en el usuario.
+            </p>
+            <a href="#contact" class="cta-button">¡Trabajemos juntos!</a>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="about">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hola, soy Angel. Soy desarrollador de software full-stack y disfruto crear soluciones útiles, intuitivas y escalables. Me apasiona transformar ideas en proyectos reales y afrontar desafíos que me permitan seguir aprendiendo y mejorando.
+                    </p>
+                    <p>Tecnologías con las que he trabajado recientemente:</p>
+                    <ul class="skills-list">
+                        <li>JavaScript</li>
+                        <li>React & Next.js</li>
+                        <li>Laravel</li>
+                        <li>php</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>TypeScript</li>
+                        <li>SQL & NoSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Experiencia</h2>
+            <div class="about-text">
+                <p style="color: var(--text-secondary); font-size: 18px;">
+                    Soy ingeniero de software y me gusta crear experiencias digitales útiles y bien pensadas. Hoy en día me dedico principalmente al desarrollo de aplicaciones web accesibles y orientadas a las necesidades reales de los usuarios.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-status">
+                        <span class="status-badge completed">
+                            <span class="status-dot"></span>
+                            Completado
+                        </span>
+                    </div>
+                    <h3>Desarrollo de un Paquete Composer para Generar CRUD en Laravel</h3>
+                    <p>
+                        Este proyecto consiste en un paquete para Composer diseñado para automatizar la generación de archivos CRUD en Laravel. Permite crear controladores, modelos, migraciones y otras estructuras base siguiendo las convenciones del framework, agilizando el desarrollo y manteniendo un código más ordenado y consistente.
+                    </p>
+                    <div class="project-footer">
+                        <ul class="tech-stack">
+                            <li>Laravel &middot</li>
+                            <li>Composer &middot</li>
+                            <li>Artisan CLI &middot</li>
+                            <li>Git / GitHub &middot</li>
+                            <li>Packagist </li>
+                        </ul>
+                        <a href="https://github.com/angeldevstudio/crud-file-generator" class="repo-btn" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                            Ver repositorio
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-status">
+                        <span class="status-badge in-progress">
+                            <span class="status-dot"></span>
+                            En Desarrollo
+                        </span>
+                    </div>
+                    <h3>Aplicación Móvil para Gestión de Citas Médicas</h3>
+                    <p>
+                        Aplicación móvil diseñada para gestionar y organizar citas médicas de manera sencilla. Actualmente en desarrollo, enfocada en mejorar la experiencia del usuario mediante una administración clara de horarios y procesos clínicos.
+                    </p>
+                    <div class="project-footer">
+                        <ul class="tech-stack">
+                            <li>Flutter &middot</li>
+                            <li>Firebase Cloud Messaging (FCM) &middot</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="https://github.com/angeldevstudio" class="repo-btn" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                            Ver repositorio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <h3>API REST Escalable</h3>
+                    <p>
+                        Diseño e implementación de API RESTful con autenticación JWT, rate limiting, documentación completa y pruebas automatizadas.
+                    </p>
+                    <div class="project-footer">
+                        <ul class="tech-stack">
+                            <li>Express</li>
+                            <li>JWT</li>
+                            <li>Redis</li>
+                            <li>Jest</li>
+                        </ul>
+                        <a href="https://github.com/angeldevstudio/rest-api-scalable" class="repo-btn" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                            Ver repositorio
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3 style="font-size: 48px; color: var(--text-primary); margin-bottom: 20px;">Conectemos</h3>
+            <p>
+                Actualmente estoy abierto a nuevas oportunidades y siempre puedes escribirme. Si tienes alguna pregunta o simplemente quieres saludar, estaré encantado de leerte y responderte.
+            </p>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Tu nombre completo"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="tu@email.com"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="¿Sobre qué quieres hablar?"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Escribe tu mensaje aquí..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diseñado y Construido por Angel Iglesias Salvador</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
